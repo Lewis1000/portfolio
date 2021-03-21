@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.animated-bg {
+    background-image: url("./assets/bg.png");
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    animation: animation 30s linear infinite;
+}
+
+@keyframes animation {
+    from { background-position: 0 0; }
+    to { background-position: -400px -400px; }
+}

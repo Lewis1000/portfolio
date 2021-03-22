@@ -1,49 +1,49 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
     return (
         <div className="container mx-auto text-center lg:text-left pb-20">
+            <Helmet>
+                <title>About - Lewis Winthrop</title>
+            </Helmet>
             <div className="px-6 pt-12 pb-6">
                 <p className="py-3 text-5xl text-gray-900 font-semibold">About</p>
             </div>
-            <div className="px-6 pt-6 pb-3">
-                <p className="py-3 text-gray-900 text-lg text-2xl font-semibold">Profile</p>
-                <p className="py-2 text-gray-500 text-lg">Hi I'm Lewis, and I'm a web developer, I enjoy learning new languages and frameworks. My strengths are mainly in front-end with technologies such as React, although I am sufficient in some backend technologies such as Node and Express. I'm currently looking for an opportunity to work as a javascript developer and would eventually like to end up as a fullstack developer.</p>
-                <p className="py-2 text-gray-500 text-lg">If you have any questions, make sure to visit my contact section.</p>
-            </div>
-            <div className="px-6 pt-3">
-                <p className="py-3 text-gray-900 text-lg text-2xl font-semibold">Skills</p>
-                <div className="py-3 flex flex-wrap justify-center lg:justify-start">
-                    <div className="pr-3 py-3 flex">
-                        <svg fill="#f16529" viewBox="0 0 384 512" height="60px" xmlns="http://www.w3.org/2000/svg" className="block m-auto">
-                            <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path>
-                        </svg>
+            <div className="content">
+                <div className="px-6 pt-6 pb-3">
+                    <p className="py-3 text-gray-900 text-lg text-2xl font-semibold">Profile</p>
+                    <p className="py-2 text-gray-500 text-lg">Hi I'm Lewis, and I'm a web developer, I enjoy learning new languages and frameworks. My strengths are mainly in front-end with technologies such as React, although I am sufficient in some backend technologies such as Node and Express. I'm currently looking for an opportunity to work as a javascript developer and would eventually like to end up as a fullstack developer.</p>
+                    <p className="py-2 text-gray-500 text-lg">If you have any questions, make sure to visit my contact section.</p>
+                </div>
+                <div className="px-6 pt-3">
+                    <p className="py-3 text-gray-900 text-lg text-2xl font-semibold">Skills</p>
+                    <div className="py-1 flex flex-wrap space-x-2 justify-center lg:justify-start">
+                        <p className="py-2 px-4 my-2 rounded-full bg-gray-200 text-gray-900">HTML / CSS</p>
+                        <p className="py-2 px-4 my-2 rounded-full bg-gray-200 text-gray-900">Javascript</p>
+                        <p className="py-2 px-4 my-2 rounded-full bg-gray-200 text-gray-900">Node</p>
+                        <p className="py-2 px-4 my-2 rounded-full bg-gray-200 text-gray-900">Express</p>
+                        <p className="py-2 px-4 my-2 rounded-full bg-gray-200 text-gray-900">Firebase</p>
+                        <p className="py-2 px-4 my-2 rounded-full bg-gray-200 text-gray-900">React</p>
+                        <p className="py-2 px-4 my-2 rounded-full bg-gray-200 text-gray-900">Redux</p>
+                        <p className="py-2 px-4 my-2 rounded-full bg-gray-200 text-gray-900">Tailwind CSS</p>
+                        <p className="py-2 px-4 my-2 rounded-full bg-gray-200 text-gray-900">Material UI</p>
                     </div>
-                    <div className="p-3 flex">
-                        <svg fill="#2965f1" viewBox="0 0 384 512" height="60px" xmlns="http://www.w3.org/2000/svg" className="block m-auto">
-                            <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"></path>
+                </div>
+                <div className="py-3 px-6 flex flex-wrap space-x-2 justify-center lg:justify-start">
+                    <Link to="/" className="py-3 px-5 my-2 rounded-full bg-gray-900 flex flex-wrap content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#fff" height="20px" className="block m-auto pr-2">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                         </svg>
-                    </div>
-                    <div className="p-3 flex">
-                        <svg fill="#68a063" viewBox="0 0 448 512" height="55px" xmlns="http://www.w3.org/2000/svg" className="block m-auto">
-                            <path d="M224 508c-6.7 0-13.5-1.8-19.4-5.2l-61.7-36.5c-9.2-5.2-4.7-7-1.7-8 12.3-4.3 14.8-5.2 27.9-12.7 1.4-.8 3.2-.5 4.6.4l47.4 28.1c1.7 1 4.1 1 5.7 0l184.7-106.6c1.7-1 2.8-3 2.8-5V149.3c0-2.1-1.1-4-2.9-5.1L226.8 37.7c-1.7-1-4-1-5.7 0L36.6 144.3c-1.8 1-2.9 3-2.9 5.1v213.1c0 2 1.1 4 2.9 4.9l50.6 29.2c27.5 13.7 44.3-2.4 44.3-18.7V167.5c0-3 2.4-5.3 5.4-5.3h23.4c2.9 0 5.4 2.3 5.4 5.3V378c0 36.6-20 57.6-54.7 57.6-10.7 0-19.1 0-42.5-11.6l-48.4-27.9C8.1 389.2.7 376.3.7 362.4V149.3c0-13.8 7.4-26.8 19.4-33.7L204.6 9c11.7-6.6 27.2-6.6 38.8 0l184.7 106.7c12 6.9 19.4 19.8 19.4 33.7v213.1c0 13.8-7.4 26.7-19.4 33.7L243.4 502.8c-5.9 3.4-12.6 5.2-19.4 5.2zm149.1-210.1c0-39.9-27-50.5-83.7-58-57.4-7.6-63.2-11.5-63.2-24.9 0-11.1 4.9-25.9 47.4-25.9 37.9 0 51.9 8.2 57.7 33.8.5 2.4 2.7 4.2 5.2 4.2h24c1.5 0 2.9-.6 3.9-1.7s1.5-2.6 1.4-4.1c-3.7-44.1-33-64.6-92.2-64.6-52.7 0-84.1 22.2-84.1 59.5 0 40.4 31.3 51.6 81.8 56.6 60.5 5.9 65.2 14.8 65.2 26.7 0 20.6-16.6 29.4-55.5 29.4-48.9 0-59.6-12.3-63.2-36.6-.4-2.6-2.6-4.5-5.3-4.5h-23.9c-3 0-5.3 2.4-5.3 5.3 0 31.1 16.9 68.2 97.8 68.2 58.4-.1 92-23.2 92-63.4z"></path>
+                        <p className="text-gray-50">Go To Portfolio</p>
+                    </Link>
+                    <Link to="/contact" className="py-3 px-5 my-2 rounded-full bg-gray-900 flex flex-wrap content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#fff" height="20px" className="block m-auto pr-2">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
-                    </div>
-                    <div className="p-3 flex">
-                        <svg fill="#61DBFB" height="55px" viewBox="175.7 78 490.6 436.9" xmlns="http://www.w3.org/2000/svg" className="block m-auto">
-                            <path d="m666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9v-22.3c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6v-22.3c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zm-101.4 106.7c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24s9.5 15.8 14.4 23.4zm73.9-208.1c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6s22.9-35.6 58.3-50.6c8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zm53.8 142.9c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6z"/><circle cx="420.9" cy="296.5" r="45.7"/>
-                        </svg>
-                    </div>
-                    <div className="p-3 flex">
-                        <svg fill="#764abc" height="52px" viewBox="0 0 256 244" xmlns="http://www.w3.org/2000/svg" className="block m-auto">
-                            <path d="M177.381 169.733c9.447-.978 16.614-9.122 16.288-18.896-.325-9.773-8.47-17.592-18.243-17.592h-.651c-10.1.326-17.918 8.796-17.592 18.895.326 4.887 2.28 9.122 5.212 12.054-11.076 21.828-28.016 37.791-53.426 51.148-17.266 9.122-35.183 12.38-53.1 10.1-14.66-1.955-26.062-8.47-33.23-19.222-10.424-15.963-11.401-33.23-2.605-50.496 6.19-12.38 15.962-21.502 22.152-26.063-1.303-4.235-3.258-11.402-4.235-16.614-47.237 34.207-42.35 80.468-28.016 102.295 10.75 16.29 32.577 26.389 56.684 26.389 6.515 0 13.03-.652 19.546-2.28 41.699-8.145 73.299-32.905 91.216-69.718zm57.336-40.397c-24.759-28.995-61.245-44.958-102.944-44.958h-5.212c-2.932-5.864-9.122-9.774-15.963-9.774h-.652C99.848 74.93 92.03 83.4 92.355 93.5c.326 9.773 8.47 17.592 18.243 17.592h.651c7.167-.326 13.357-4.887 15.963-11.077h5.864c24.759 0 48.214 7.167 69.39 21.176 16.288 10.751 28.016 24.76 34.531 41.7 5.538 13.683 5.212 27.04-.652 38.443-9.121 17.266-24.432 26.714-44.63 26.714-13.031 0-25.41-3.91-31.926-6.842-3.583 3.258-10.099 8.47-14.66 11.729 14.009 6.515 28.343 10.099 42.025 10.099 31.274 0 54.404-17.267 63.2-34.533 9.447-18.896 8.795-51.474-15.637-79.165zM69.225 175.27c.326 9.774 8.47 17.592 18.243 17.592h.652c10.099-.325 17.917-8.796 17.591-18.895-.325-9.774-8.47-17.592-18.243-17.592h-.651c-.652 0-1.63 0-2.28.325-13.357-22.153-18.895-46.26-16.94-72.323 1.302-19.547 7.818-36.488 19.22-50.497 9.447-12.054 27.69-17.918 40.07-18.243 34.531-.652 49.19 42.351 50.168 59.618 4.235.977 11.402 3.258 16.289 4.887C189.434 27.366 156.857 0 125.584 0c-29.32 0-56.359 21.176-67.11 52.451-14.985 41.7-5.212 81.771 13.031 113.372-1.628 2.28-2.606 5.864-2.28 9.448z" />
-                        </svg>
-                    </div>
-                    <div className="p-3 flex">
-                        <svg baseProfile="tiny" height="72px" id="Layer_1" version="1.2" viewBox="90 20 345 460" xmlns="http://www.w3.org/2000/svg" className="block m-auto">
-                            <path d="M297.036,205.578l-36.334,33.809l-33.716-68.005l17.446-39.108c4.416-7.84,11.621-7.855,16.037,0   L297.036,205.578z" fill="#FFA000"/><polygon fill="#F57F17" points="260.702,239.386 124.924,365.697 226.986,171.381  "/><path d="M336.776,153.901c6.491-6.239,13.202-4.111,14.912,4.729l35.342,205.375L269.873,434.22   c-4.1,2.264-14.957,3.246-14.957,3.246s-9.91-1.185-13.687-3.281L124.92,365.69L336.776,153.901z" fill="#FFCA28"/><path d="M226.986,171.381L124.924,365.697l45.46-283.998c1.674-8.847,6.71-9.699,11.203-1.89L226.986,171.381z" fill="#FFA000"/>
-                        </svg>
-                    </div>
+                        <p className="text-gray-50">Go To Contact</p>
+                    </Link>
                 </div>
             </div>
         </div>

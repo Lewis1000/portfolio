@@ -6,17 +6,17 @@ const Navigation = () => {
         <div>
             <div className="px-8 flex w-full h-24">
                 <div className="flex flex-grow h-full">
-                    <div className="pr-4 flex flex-wrap content-center">
+                    <div className="pr-4 flex flex-wrap content-center flex">
                         <Link to="/">
                             <p className="text-lg text-gray-900 font-semibold m-auto">LW</p>
                         </Link>
                     </div>
-                    <div className="px-4 hidden lg:flex flex-wrap content-center">
+                    <div className="px-4 flex flex-wrap content-center">
                         <Link to="/about">
                             <p className="text-lg text-gray-500 font-normal">About</p>
                         </Link>
                     </div>
-                    <div className="px-4 hidden lg:flex flex-wrap content-center">
+                    <div className="px-4 flex flex-wrap content-center">
                         <Link to="/contact">
                             <p className="text-lg text-gray-500 font-normal">Contact</p>
                         </Link>

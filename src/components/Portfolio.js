@@ -1,13 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Portfolio = () => {
     return (
         <div className="container mx-auto text-center lg:text-left">
-            <div className="px-6 py-12">
+            <Helmet>
+                <title>Portfolio - Lewis Winthrop</title>
+            </Helmet>
+            <div className="px-6 py-12 title">
                 <p className="py-3 text-5xl text-gray-900 font-semibold">Portfolio</p>
                 <p className="py-2 text-gray-500 text-lg">Here's some of my recent projects. All source code is available on my <a target="_blank" className="text-gray-900 font-semibold" href="https://github.com/Lewis1000" rel="noreferrer">GitHub</a></p>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 pb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 pb-20 content">
                 <div className="p-6">
                     <div className="my-3 h-60 thumb-1" />
                     <a href="https://github.com/Lewis1000/apple-react-clone" target="_blank" rel="noreferrer">

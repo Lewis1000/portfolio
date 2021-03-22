@@ -8,7 +8,7 @@ const Navigation = () => {
                 <div className="flex flex-grow h-full">
                     <div className="pr-4 flex flex-wrap content-center">
                         <Link to="/">
-                            <p className="text-lg text-gray-900 font-semibold m-auto">Lewis Winthrop</p>
+                            <p className="text-lg text-gray-900 font-semibold m-auto">LW</p>
                         </Link>
                     </div>
                     <div className="px-4 hidden lg:flex flex-wrap content-center">

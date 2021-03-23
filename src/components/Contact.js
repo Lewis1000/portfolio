@@ -43,15 +43,9 @@ const Contact = () => {
                     </a>
                 </div>
                 <div className="py-3 px-6 flex flex-wrap space-x-2 justify-center lg:justify-start">
-                    <Link to="/about" className="py-3 px-5 my-2 rounded-full bg-gray-900 flex flex-wrap content-center">
+                    <Link to="/" className="py-3 px-5 my-2 rounded-full bg-gray-900 flex flex-wrap content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#fff" height="20px" className="block m-auto pr-2">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                        </svg>
-                        <p className="text-gray-50">Go To About</p>
-                    </Link>
-                    <Link to="/portfolio" className="py-3 px-5 my-2 rounded-full bg-gray-900 flex flex-wrap content-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#fff" height="20px" className="block m-auto pr-2">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
                         <p className="text-gray-50">Go To Portfolio</p>
                     </Link>

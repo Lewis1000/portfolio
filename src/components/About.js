@@ -14,7 +14,7 @@ const About = () => {
             <div className="content">
                 <div className="px-6 pt-6 pb-3">
                     <p className="py-3 text-gray-900 text-lg text-2xl font-semibold">Profile</p>
-                    <p className="py-2 text-gray-500 text-lg">Hi I'm Lewis, and I'm a web developer, I enjoy learning new languages and frameworks. My strengths are mainly in front-end with technologies such as React, although I am sufficient in some backend technologies such as Node and Express. I'm currently looking for an opportunity to work as a javascript developer and would eventually like to end up as a fullstack developer.</p>
+                    <p className="py-2 text-gray-500 text-lg">Hi I'm Lewis, and I'm a web developer, I enjoy learning new languages and frameworks. My strengths are mainly in front-end with technologies such as React, although I am sufficient in some backend technologies such as Node and Express. I'm currently looking for an opportunity to work in a company that will help me progress into a career as a fullstack developer.</p>
                     <p className="py-2 text-gray-500 text-lg">If you have any questions, make sure to visit my contact section.</p>
                 </div>
                 <div className="px-6 pt-3">
